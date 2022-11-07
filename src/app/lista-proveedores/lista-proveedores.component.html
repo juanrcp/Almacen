@@ -1,0 +1,9 @@
+<div class="proveedores">
+    <ul class="proveedores">
+        <li *ngFor="let proveedor of proveedores">
+          <button routerLink="/detalles/{{proveedor.id}}">
+            <span class="badge">{{proveedor.nombre}}</span>
+          </button>
+        </li>
+      </ul>
+</div>

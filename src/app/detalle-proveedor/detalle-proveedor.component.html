@@ -1,0 +1,12 @@
+<div *ngIf="proveedor">
+    <h2>Datos tecnicos: {{proveedor.nombre | uppercase}}</h2>
+      <div>
+        <p>ID del Proveedor: {{proveedor.id}}</p>
+        <p>Nombre: {{proveedor.nombre}}</p>
+        <p>Numero de Contacto: {{proveedor.contacto}}</p>
+        <p>Forma de contacto: {{proveedor.medio}}</p>
+        <p>Direccion: {{proveedor.direccion}}</p>
+      </div>
+  
+      <button type="button" (click)="goBack()">VOLVER ATRAS</button>
+  </div>
